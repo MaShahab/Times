@@ -11,5 +11,6 @@
     <orderEntry type="library" name="babel" level="application" />
     <orderEntry type="library" name="react-dom.development" level="application" />
     <orderEntry type="library" name="@types/prop-types" level="application" />
+    <orderEntry type="library" name="religious-time" level="application" />
   </component>
 </module>

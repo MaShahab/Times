@@ -6,11 +6,15 @@ import Clock from "./components/ClockComponent";
 import background from '../src/images/background.jpg'
 import '../src/styles/mainStyle.css'
 import Stopwatch from "./components/StopwatchComponent";
-import PersianNumber from "./components/PersianNumComponent";
 import loadingProgress from "../src/images/amc_loading.gif"
+import ScriptTag from 'react-script-tag';
+import {Helmet} from "react-helmet";
+
 
 class firstComponent extends Component{
+
   render(){
+
       let p = new Promise((resolve , reject) =>{
           setTimeout(() =>{
               resolve()
@@ -18,7 +22,6 @@ class firstComponent extends Component{
       });
 
       p.then( ()=>{
-          console.log("salam");
           let a = document.getElementById("loading_division");
           // a.style.cssText = "transition: all 2s; display: none";
           a.style.transition="opacity 1s";
@@ -27,14 +30,20 @@ class firstComponent extends Component{
           let b = document.getElementById("loading_division");
           b.style.zIndex="-1";
       });
+
+
+
     return(
         <div>
             <div id="loading_division">
                 <img src={loadingProgress} id="loading" alt="sdfds"/>
             </div>
             <img id="backgroundImage" src={background}/>
-            <Clock/>
+
+          <Clock/>
           <TimeDate/>
+
+
           <div class="container">
               <div class="row" style={{position:"relative",textAlign:"center"}}>
                   <div className="col-6 items" id="countdownDiv">
@@ -45,10 +54,12 @@ class firstComponent extends Component{
                   </div>
               </div>
           </div>
+            <div id="mydiv"/>
         </div>
     )
   }
 }
+
 
 
 export default firstComponent

@@ -26,9 +26,11 @@ p{
 }
 
 .txts{
-    font-family: Calibri, cursive;
+    font-family: 'Adobe Naskh Medium', serif;
     color: rgba(25,20,108,0.98);
-    font-size: 38px;
+    font-size: 34px;
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
 }
 
 .dates{
@@ -45,7 +47,7 @@ p{
 }
 
 #countdown{
-    font-size: 36px;
+    font-size: 30px;
     color: midnightblue;
     font-family: Calibri, serif;
     background-image: url("../images/simple_lite_background.jpg");
@@ -56,7 +58,7 @@ p{
 }
 
 #stopwatch{
-    font-size: 36px;
+    font-size: 30px;
     color: midnightblue;
     font-family: Calibri, serif;
     background-image: url("../images/simple_lite_background.jpg");
@@ -81,6 +83,13 @@ p{
     right: 32%;
     z-index: 1;
     display: block;
+}
+
+#owghat{
+    font-size: 30px;
+    color: midnightblue;
+    font-family: Calibri, serif;
+    background-image: url("../images/religous_background.jpg");
 }
 
 @media only screen and (min-width: 600px) {
